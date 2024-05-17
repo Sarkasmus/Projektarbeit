@@ -18,7 +18,7 @@ public class Controller {
     private boolean orOn=false;
     //UI Controls werden hier deklariert (Buttons, images etc)
 
-    @FXML
+    @FXML//"Test"
     private FlowPane output1;
     ImageView imageView1;
 
