@@ -7,16 +7,20 @@
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@demoBackground.css">
          <children>
-            <VBox prefHeight="200.0" prefWidth="100.0">
-               <children>
-                  <Button id="and" fx:id="and1" mnemonicParsing="false" onAction="#handleButtonPressEvent" prefHeight="25.0" prefWidth="52.0" stylesheets="@demoBackground.css" />
-                  <Button id="or" fx:id="or1" mnemonicParsing="false" onAction="#handleButtonPressEvent2" prefHeight="25.0" prefWidth="52.0" stylesheets="@demoBackground.css" />
-               </children>
-            </VBox>
+            <VBox fx:id="source" prefHeight="400.0" prefWidth="150.0" />
          </children></HBox>
       <VBox id="workbench" prefHeight="200.0" prefWidth="500.0" style="-fx-background-image: url(&quot;images/demoBackgroundJ.jpg&quot;); -fx-background-size: stretch;" stylesheets="@demoBackground.css">
          <children>
-            <FlowPane fx:id="output1" prefHeight="408.0" prefWidth="450.0" />
+            <Pane fx:id="output" onDragDetected="#targetOnDragDetectedHandler" onDragDone="#targetOnDragDoneHandler" onDragDropped="#targetOnDragDroppedHandler" onDragOver="#targetOnDragOverHandler" prefHeight="410.0" prefWidth="450.0" />
+            <HBox id="delete" prefHeight="111.0" prefWidth="450.0" style="-fx-background-image: url(&quot;images/deleteBackground.png&quot;);" stylesheets="@demoBackground.css">
+               <children>
+                  <Pane fx:id="outputDelete" onDragDetected="#targetOnDragDetectedHandler" onDragDone="#targetOnDragDoneHandler" onDragDropped="#targetDeleteOnDragDroppedHandler" onDragOver="#targetOnDragOverHandler" prefHeight="51.0" prefWidth="456.0">
+                     <children>
+                        <Label id="delete2" alignment="CENTER" prefHeight="50.0" prefWidth="51.0" stylesheets="@demoBackground.css" />
+                     </children>
+                  </Pane>
+               </children></HBox>
          </children></VBox>
    </children>
 </HBox>
+
