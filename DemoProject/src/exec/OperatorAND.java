@@ -1,9 +1,13 @@
 package exec;
 
-public class OperatorAND {
+public abstract class OperatorAND extends Gatter {
 
-    public boolean performAND( boolean a, boolean b){
+    public OperatorAND(boolean a, boolean b) {
+        super(a, b);
+    }
+
+    public boolean ausgabe (boolean a, boolean b){
         boolean ResultAND;
-        return ResultAND = a & b;
+        return  a && b;
     }
 }

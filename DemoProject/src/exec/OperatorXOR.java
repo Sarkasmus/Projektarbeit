@@ -1,8 +1,12 @@
 package exec;
 
-public class OperatorXOR {
+abstract class OperatorXOR extends Gatter {
 
-    public boolean performXOR( boolean a, boolean b){
+    public OperatorXOR(boolean a, boolean b) {
+        super(a, b);
+    }
+
+    public boolean ausgabe (boolean a, boolean b){
         boolean ResultXOR;
         return ResultXOR = a ^ b;
     }
