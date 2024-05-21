@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@demoBackground.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exec.Controller">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" stylesheets="@demoBackground.css">
+         <children>
+            <VBox fx:id="source" prefHeight="400.0" prefWidth="150.0" />
+         </children></HBox>
+      <VBox id="workbench" prefHeight="200.0" prefWidth="500.0" style="-fx-background-image: url(&quot;images/demoBackgroundJ.jpg&quot;); -fx-background-size: stretch;" stylesheets="@demoBackground.css">
+         <children>
+            <Pane fx:id="output" onDragDetected="#targetOnDragDetectedHandler" onDragDone="#targetOnDragDoneHandler" onDragDropped="#targetOnDragDroppedHandler" onDragOver="#targetOnDragOverHandler" prefHeight="410.0" prefWidth="450.0" />
+            <HBox id="delete" prefHeight="111.0" prefWidth="450.0" style="-fx-background-image: url(&quot;images/deleteBackground.png&quot;);" stylesheets="@demoBackground.css">
+               <children>
+                  <Pane fx:id="outputDelete" onDragDetected="#targetOnDragDetectedHandler" onDragDone="#targetOnDragDoneHandler" onDragDropped="#targetDeleteOnDragDroppedHandler" onDragOver="#targetOnDragOverHandler" prefHeight="51.0" prefWidth="456.0">
+                     <children>
+                        <Label id="delete2" alignment="CENTER" prefHeight="50.0" prefWidth="51.0" stylesheets="@demoBackground.css" />
+                     </children>
+                  </Pane>
+               </children></HBox>
+         </children></VBox>
+   </children>
+</HBox>
+
