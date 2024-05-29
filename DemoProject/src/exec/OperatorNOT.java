@@ -1,14 +1,11 @@
 package exec;
 
-public abstract class OperatorNOT extends Gatter{
+public abstract class OperatorNOT extends Gatter {
 
-    public OperatorNOT(boolean a, boolean b) {
-        super(a, b);
-    }
-
-   // public boolean[] ausgabe(boolean a, boolean b) {
+    // public boolean[] ausgabe(boolean a, boolean b) {
     //    return new boolean[]{!a, !b};
-   // }
+    // }
+   /*
     public boolean ausgabe(boolean a, boolean b){
         if (a = true){
             a= false;
@@ -24,5 +21,10 @@ public abstract class OperatorNOT extends Gatter{
             b = true;
         }
         return ausgabe (a, b);
+    }
+}
+ */
+    public boolean ausgabe(boolean a, boolean b) {
+        return ausgabe (!a, !b);
     }
 }
