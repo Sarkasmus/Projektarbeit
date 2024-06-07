@@ -2,9 +2,9 @@ package exec;
 
 public class XOR extends Gatter {
 
-    public boolean getAusgabe(){
+    public boolean getAusgabeboolean(){
 
-        return getA() ^ getB();
+        return getABoolean() ^ getBBoolean();
     }
 
     public String toString() {

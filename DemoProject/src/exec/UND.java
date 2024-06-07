@@ -3,11 +3,17 @@ package exec;
 public  class  UND extends Gatter {
 
 
-    public boolean getAusgabe(){
+    public boolean getAusgabeBoolean(){
+        getA();
+        getB();
+        return  getABoolean() && getBBoolean();
 
-        return  getA() && getB();
     }
+
+
     public String toString() {
         return "UND{ " + "a=" +getA() + ", " + "b=" +getB() + ", " + "c=" +getAusgabe() + " }";
     }
+
+
 }

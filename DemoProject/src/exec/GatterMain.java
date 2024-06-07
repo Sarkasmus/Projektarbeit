@@ -12,6 +12,7 @@ public class GatterMain {
     public static void main(String[] args) {
 
 
+
         UND undGatter = new UND();
         UND undGatter2 = new UND();
         ODER orGatter = new ODER();
@@ -19,12 +20,15 @@ public class GatterMain {
         NOT notGatter = new NOT();
 
 
-        undGatter.setA(true);
-        undGatter.setB(true);
+        undGatter.setA(1);
+        undGatter.setB(1);
+
+
         System.out.println("UND Gatter: " + undGatter.getAusgabe());
 
-        undGatter2.setA(true);
-        undGatter2.setB(false);
+        undGatter2.setA(0);
+        undGatter2.setB(1);
+
         System.out.println("UND Gatter: " + undGatter2.getAusgabe());
 
 
@@ -34,11 +38,11 @@ public class GatterMain {
 
 
         System.out.println(gatterListe);
-        for (Gatter gatter : gatterListe) {
+        for (Gatter gatter : gatterListe){
             System.out.println(gatter);
         }
-
-
+        int index = 0;
+        System.out.println("Das Element am Index " + index + " ist ein: "+  gatterListe.get(index));
 /*
         ArrayList<String> gatter = new ArrayList<>();
         gatter.add("UND");
@@ -57,5 +61,7 @@ public class GatterMain {
         }
         System.out.println(gatter);
 */
+
     }
+
 }

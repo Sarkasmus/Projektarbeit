@@ -1,9 +1,11 @@
 package exec;
 
+import exec.Gatter;
+
 public  class NOT extends Gatter {
 
 
-    public boolean getAusgabe() {
+    public boolean getAusgabeboolean() {
         return getInv();
 
     }

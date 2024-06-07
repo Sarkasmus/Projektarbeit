@@ -2,18 +2,23 @@ package exec;
 
 public class Gatter {
 
-    private boolean a;
-    private boolean b;
+    private boolean aBoolean;
+    private boolean bBoolean;
     private boolean inv;
 
-    public boolean getA() {
 
-        return a;
+    private int a;
+    private int b;
+
+
+    public boolean getABoolean() {
+
+        return aBoolean;
     }
 
-    public boolean getB() {
+    public boolean getBBoolean() {
 
-        return b;
+        return bBoolean;
     }
 
     public boolean getInv() {
@@ -21,22 +26,62 @@ public class Gatter {
         return !inv;
     }
 
-    public boolean getAusgabe() {
+    public boolean getAusgabeBoolean() {
 
         return false;
     }
 
-    public void setA(boolean a) {
-
-        this.a = a;
+    public int getA(){
+        if(a==0){
+            setABoolean(false);
+        }
+        else
+            setABoolean(true);
+        return aBoolean ? 1:0;
     }
 
-    public void setB(boolean b) {
+    public int getB(){
+        if(b==0){
+            setBBoolean(false);
+        }
+        else
+            setBBoolean(true);
+        return bBoolean ? 1:0;
 
-        this.b = b;
+    }
+
+    public int getAusgabe(){
+        return getAusgabeBoolean() ? 1:0;
+    }
+
+    public int getInvtoint(){
+        return inv ? 1:0;
+    }
+
+    public void setABoolean(boolean aBoolean) {
+
+        this.aBoolean = aBoolean;
+    }
+
+
+    public void setBBoolean(boolean bBoolean) {
+
+        this.bBoolean = bBoolean;
     }
 
     public void setInv(boolean inv) {
         this.inv = inv;
     }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+
+
+
+
 }
