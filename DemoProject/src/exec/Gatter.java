@@ -39,4 +39,5 @@ public class Gatter {
     public void setInv(boolean inv) {
         this.inv = inv;
     }
+
 }
